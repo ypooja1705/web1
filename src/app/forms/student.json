@@ -1,0 +1,111 @@
+{
+    "studentRecords": [
+        {
+            "studentName": "Shashi",
+            "class": "b.tech",
+            "section": "B",
+            "FatherName": "Ram Surat Yadav",
+            "mobileNo": [
+                1234567890,
+                23456788765
+            ],
+            "subject": [
+                "C",
+                "Java",
+                "DBMS"
+            ],
+            "address": {
+                "resident": {
+                    "addressLine1": "xyz",
+                    "city": "gorakhpur",
+                    "state": "UP"
+                },
+                "parmanent": "abc"
+            },
+            "relation": {
+                "father": [
+                    {
+                        "name": "qwe",
+                        "age": 40,
+                        "like": true,
+                        "relation": "chacha"
+                    },
+                    {
+                        "name": "PQR",
+                        "age": 60,
+                        "like": true,
+                        "relation": "dadi"
+                    }
+                ],
+                "mother":  [
+                    {
+                        "name": "qwe",
+                        "age": 40,
+                        "like": true,
+                        "relation": "mama"
+                    },
+                    {
+                        "name": "PQR",
+                        "age": 60,
+                        "like": true,
+                        "relation": "nani"
+                    }
+                ]
+            }
+        },
+        {
+            "studentName": "Shashi",
+            "class": "b.tech",
+            "section": "B",
+            "FatherName": "Ram Surat Yadav",
+            "mobileNo": [
+                1234567890,
+                23456788765
+            ],
+            "subject": [
+                "C",
+                "Java",
+                "DBMS"
+            ],
+            "address": {
+                "resident": {
+                    "addressLine1": "xyz",
+                    "city": "gorakhpur",
+                    "state": "UP"
+                },
+                "parmanent": "abc"
+            },
+            "relation": {
+                "father": [
+                    {
+                        "name": "qwe",
+                        "age": 40,
+                        "like": true,
+                        "relation": "chacha"
+                    },
+                    {
+                        "name": "PQR",
+                        "age": 60,
+                        "like": true,
+                        "relation": "dadi"
+                    }
+                ],
+                "mother":  [
+                    {
+                        "name": "qwe",
+                        "age": 40,
+                        "like": true,
+                        "relation": "mama"
+                    },
+                    {
+                        "name": "PQR",
+                        "age": 60,
+                        "like": true,
+                        "relation": "nani"
+                    }
+                ]
+            }
+        }
+      
+    ]
+}

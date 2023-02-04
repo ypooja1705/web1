@@ -1,0 +1,11 @@
+.fix{
+    display:flex;
+    list-style-type: none;
+    text-decoration: solid;
+}
+.fix > li {
+    padding: 24px;
+    cursor: pointer;
+    // background-color:aqua;
+}
+

@@ -1,0 +1,116 @@
+{
+  "Student": [
+    {
+      "id": 1,
+      "name": "Harsh",
+      "class": 1,
+      "section": "A"
+    },
+    {
+      "id": 2,
+      "name": "Shashi",
+      "class": 2,
+      "section": "B"
+    },
+    {
+      "name": "",
+      "class": "",
+      "section": "",
+      "id": 3
+    },
+    {
+      "name": "ripu daman",
+      "class": "2",
+      "section": "A",
+      "id": 4
+    }, 
+    {
+      "name": "Ram",
+      "class": "4",
+      "section": "C",
+      "id": 5
+    },
+    {
+      "name": "sonu",
+      "class": "8",
+      "section": "C",
+      "id": 6
+    },
+    {
+      "name": "archana",
+      "class": "6",
+      "section": "c",
+      "id": 7
+    },
+    {
+      "name": "shashi yadav",
+      "class": "btech",
+      "section": "a",
+      "id": 8
+    }
+  ],
+  "Teacher": [
+    {
+      "id": 1,
+      "name": "Shivam",
+      "class": 1,
+      "section": "A"
+    },
+    {
+      "id": 2,
+      "name": "Sony",
+      "class": 2,
+      "section": "B"
+    },
+    {
+      "name": "sunil yadav",
+      "class": "btech",
+      "section": "a",
+      "id": 3
+    },
+    {
+      "name": "gaurav yadav",
+      "class": "btech",
+      "section": "b",
+      "id": 4
+    },
+    {
+      "name": "ashu",
+      "class": "3",
+      "section": "a",
+      "id": 5
+    },
+    {
+      "name": "sunny",
+      "class": "3",
+      "section": "a",
+      "id": 6
+    }
+  ],
+  "customer": [
+    {
+      "customerCode": "cccc",
+      "customerName": "sunny",
+      "customerAmount": 10000,
+      "id": 1
+    },
+    {
+      "customerCode": "qqqqq",
+      "customerName": "sonu",
+      "customerAmount": 1234,
+      "id": 2
+    },
+    {
+      "customerCode": "www",
+      "customerName": "shashi yadav",
+      "customerAmount": "1200",
+      "id": 3
+    },
+    {
+      "customerCode": "wer",
+      "customerName": "ripu daman",
+      "customerAmount": "450",
+      "id": 4
+    }
+  ]
+}

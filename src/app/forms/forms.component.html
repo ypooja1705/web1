@@ -1,0 +1,46 @@
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{{data.studentRecords.length}}
+<table class="table table-strip">
+  <tr>
+    <th>Student Name</th>
+    <th>class</th>
+    <th>Section</th>
+    <th>Fathers Name</th>
+    <th>Mobile No.</th>
+    <th>Address</th>
+  </tr>
+  <tr *ngFor="let rec of data.studentRecords">
+    <td>{{rec.studentName}}</td>
+    <td>{{rec.class}}</td>
+    <td>{{rec.section}}</td>
+    <td>{{rec.FatherName}}</td>
+    <td>
+      <span *ngFor="let mobile of rec.mobileNo">{{mobile}} </span>
+    </td>
+    <td>
+      <span> "address line 1": {{rec.address.resident.addressLine1}}</span> <br>
+      <span> "City": {{rec.address.resident.city}}</span> <br>
+      <span> "State": {{rec.address.resident.state}}</span> <br>
+
+      <span>parmanent Address : {{rec.address.parmanent}}</span>
+    </td>
+  </tr>
+</table>
+<button class="btn btn-primary" (click)="clickMe()">click me</button>
