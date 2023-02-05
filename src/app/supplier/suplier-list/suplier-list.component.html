@@ -1,0 +1,8 @@
+<p>{{supplierObj.name}} - {{supplierObj.type}} - {{supplierObj.location}} - {{supplierObj.goods}}</p>
+<input type="text" value="{{supplierObj.name}}">
+<input type="text" [value]="supplierObj.type">
+<input type="text" [(ngModel)]="supplierObj.location">
+
+
+
+<input type="text" (input)="updateTextField($event)" [value]="supplierObj.goods">
