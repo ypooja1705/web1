@@ -13,6 +13,7 @@ import {ApiService} from './api.service';
 import { MenuComponent } from './shared/menu/menu.component';
 import { CustmerapplicatonComponent } from './custmerapplicaton/custmerapplicaton.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { CustmerapplicatonComponent } from './custmerapplicaton/custmerapplicato
     FormsComponent,
     StudentComponent,
     MenuComponent,
-    CustmerapplicatonComponent
+    CustmerapplicatonComponent,
+    
   ], 
   imports: [
     BrowserModule,
