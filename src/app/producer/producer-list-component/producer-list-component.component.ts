@@ -22,6 +22,7 @@ constructor(){
 ngOnInit(): void {
     
 }
+
 updateTextField(e:Event){
   debugger;
   console.log(e);
