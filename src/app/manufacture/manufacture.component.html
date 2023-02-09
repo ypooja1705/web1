@@ -1,1 +1,8 @@
-<p>manufacture works!</p>
+<h4>manufacture works!</h4>
+<p>{{manufactureObj.name}}--{{manufactureObj.location}}--{{manufactureObj.goods}}</p>
+<br>
+<input type="text" value="{{manufactureObj.name}}">
+<input type="text" value="{{manufactureObj.location}}">
+<input type="text" [value]="manufactureObj.goods">
+<input type="text" [(ngModel)]="manufactureObj.location">
+<input type="text" (input)="updateTextField($event)" [value]="manufactureObj.goods">

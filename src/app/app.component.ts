@@ -48,7 +48,13 @@ export class AppComponent {
     route:"producer/producer-list",
     displayName:"Producer-List",
     cssClass:"btn btn-info"
+  },
+  {
+    route:"manufacture/manufacture-List",
+    displayName:"Manufacture-List",
+    cssClass:"btn btn-warning"
   }
+
 ];
 }
   

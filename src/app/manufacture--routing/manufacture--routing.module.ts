@@ -1,11 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { RouterModule,Routes } from '@angular/router';
+import { ManufactureComponent } from '../manufacture/manufacture.component';
+const routes:Routes =[
+  {
+    path:"", component:ManufactureComponent
+  },
+  {
+     
+    path:"manufacture-List",component:ManufactureComponent
+  }
+]
 
 @NgModule({
   declarations: [],
-  imports: [
+  imports: [RouterModule.forChild(routes),
     CommonModule
   ]
 })

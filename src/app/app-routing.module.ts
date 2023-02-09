@@ -16,7 +16,7 @@ const routes: Routes = [
   // {path: 'supplier', component:SupplierGoodsComponent}
   {path: 'supplier', loadChildren: () => import('./supplier/supplier.module').then(m => m.SupplierModule) },
   {path: 'producer', loadChildren: () => import('./producer/producer.module').then(m => m.ProducerModule) },
-  
+  {path: 'manufacture', loadChildren: () => import('./manufacture/manufacture.module').then(m => m.ManufactureModule) },
   
 ];
 
