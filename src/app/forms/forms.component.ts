@@ -123,7 +123,21 @@ constructor(){
   ngOnInit() {
    
   }
+  formSource=[{
+    route:"home",
+    displayName:"Home",
+    cssClass:"btn btn-primary"},
 
+    {route:"form",
+    displayName:"Form",
+    cssClass:"btn btn-info"
+    },
+    {
+      route:"student",
+    displayName:"Student",
+    cssClass:"btn btn-danger"
+    }
+]
 
   clickMe(){
     alert(this.data?.studentRecords[0].FatherName);

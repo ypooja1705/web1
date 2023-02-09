@@ -2,9 +2,9 @@
 <p> {{producerObj.name}}--{{producerObj.type}} --{{producerObj.location}}--{{producerObj.goods}}</p>
 <br>
 <input type="text" value="{{producerObj.name}}">
-<br>
-<input type="text"value="{{producerObj.location}}"><br>
+<input type="text"value="{{producerObj.location}}">
 <input type="text"[value]="producerObj.goods">
-<br>
-<input type="text" [(ngModel)]="producerObj.location"><br>
+<input type="text" [(ngModel)]="producerObj.location">
 <input type="text" [(ngModel)]="producerObj.type">
+<br>
+<input type="text" (input)="updateTextField($event)" [value]="producerObj.goods">

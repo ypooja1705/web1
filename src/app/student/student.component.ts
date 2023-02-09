@@ -18,6 +18,27 @@ export class StudentComponent implements OnInit {
       "name": "", "class": "", "section": ""
     } 
   status:string='offline';
+
+  menuSource=[{
+    route:"home",
+    displayName:"Home",
+    cssClass:"btn btn-primary"
+  },
+  {
+    route:"forms",
+    displayName:"Forms",
+    cssClass:"btn btn-secondary"
+  },
+  {
+    route:"student",
+    displayName:"Student",
+    cssClass:"btn btn-danger"
+  },
+  {
+    route:"customer",
+    displayName:"Customer",
+    cssClass:"btn btn-info"
+  }];
   constructor(private api: ApiService,private http:HttpClient) {
   }
 

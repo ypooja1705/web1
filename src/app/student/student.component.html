@@ -8,9 +8,9 @@
         </thead>
         <tbody *ngIf="students.length">
             <tr *ngFor="let student of students">
-                <td>{{student.name|uppercase}}</td>
-                <td>{{student.class|currency}}</td>
-                <td>{{student.section|lowercase}}</td>
+                <td>{{student.name| uppercase}}</td>
+                <td>{{student.class}}</td>
+                <td>{{student.section| lowercase}}</td>
             </tr>
         </tbody>
     </table>
@@ -35,46 +35,53 @@
     <br>
     <label>Cube : </label>{{calculateCube(5)}}
     <br>
-<br>
-<form class="row gy-2 gx-3 align-items-center">
-    <div class="col-auto">
-        <label class="form-label" for="autoSizingInput">Name</label>
-        <input type="text" name="name" class="form-control" id="autoSizingInput" [(ngModel)]="studentsForm.name">
-    </div>
-    <div class="col-auto">
-        <label class="form-label" for="autoSizingInputGroup">class</label>
-        <input type="text" name="class" class="form-control" id="autoSizingInputGroup" [(ngModel)]="studentsForm.class">
-    </div>
-    <div class="col-auto">
-        <label class="form-label" for="autoSizingInput">section</label>
-        <input type="text" name="section" class="form-control" id="autoSizingInput" [(ngModel)]="studentsForm.section">
-    </div>
-    <div class="col-auto">
-        <label class="visually-hidden" for="autoSizingInput"></label>
-        <button type="button" class="form-control btn btn-success" value="submit" (click)="onSave()">Save</button>
-    </div>
     <br>
-</form>
-<br>
-<br>
-<form class="row gy-2 gx-3 align-items-center">
-    <div class="col-auto">
-        <label class="form-label" for="autoSizingInput">Name</label>
-        <input type="text" name="name" class="form-control" id="autoSizingInput" [(ngModel)]="teachersForm.name">
-    </div>
-    <div class="col-auto">
-        <label class="form-label" for="autoSizingInputGroup">class</label>
-        <input type="text" name="class" class="form-control" id="autoSizingInputGroup" [(ngModel)]="teachersForm.class">
-    </div>
-    <div class="col-auto">
-        <label class="form-label" for="autoSizingInput">section</label>
-        <input type="text" name="section" class="form-control" id="autoSizingInput" [(ngModel)]="teachersForm.section">
-    </div>
-    <div class="col-auto">
-        <label class="visually-hidden" for="autoSizingInput"></label>
-        <button type="button" class="form-control btn btn-success" value="submit" (click)="onClick()">submit</button>
+    <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInput">Name</label>
+            <input type="text" name="name" class="form-control" id="autoSizingInput" [(ngModel)]="studentsForm.name">
+        </div>
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInputGroup">class</label>
+            <input type="text" name="class" class="form-control" id="autoSizingInputGroup"
+                [(ngModel)]="studentsForm.class">
+        </div>
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInput">section</label>
+            <input type="text" name="section" class="form-control" id="autoSizingInput"
+                [(ngModel)]="studentsForm.section">
+        </div>
+        <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput"></label>
+            <button type="button" class="form-control btn btn-success" value="submit" (click)="onSave()">Save</button>
+        </div>
+        <br>
+    </form>
     <br>
+    <br>
+    <form class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInput">Name</label>
+            <input type="text" name="name" class="form-control" id="autoSizingInput" [(ngModel)]="teachersForm.name">
+        </div>
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInputGroup">class</label>
+            <input type="text" name="class" class="form-control" id="autoSizingInputGroup"
+                [(ngModel)]="teachersForm.class">
+        </div>
+        <div class="col-auto">
+            <label class="form-label" for="autoSizingInput">section</label>
+            <input type="text" name="section" class="form-control" id="autoSizingInput"
+                [(ngModel)]="teachersForm.section">
+        </div>
+        <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput"></label>
+            <button type="button" class="form-control btn btn-success" value="submit"
+                (click)="onClick()">submit</button>
+            <br>
+        </div>
+    </form>
+    <app-menu [menuList]="menuSource"></app-menu>
 </div>
-</form>
-</div>
+
 <button (click)="checkstatus()" [class]="status=='online'?'green':'red'">onclick {{status}}</button>

@@ -14,7 +14,7 @@ producerObj={
   goods:"books"
 
 }
-tt:string="";
+ 
 constructor(){
 
 }
@@ -22,6 +22,16 @@ constructor(){
 ngOnInit(): void {
     
 }
+updateTextField(e:Event){
+  debugger;
+  console.log(e);
+
+  // this.tt=this.supplierObj.goods;
+  // (e.target as HTMLInputElement).value= this.supplierObj.goods;
+
+  this.producerObj.goods=(e.target as HTMLInputElement).value;
+}
 
 }
+
 

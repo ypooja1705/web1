@@ -1,12 +1,15 @@
 <h4 style="color: red;"> menu works!</h4>
-<ul class="fix">
+<!-- <ul class="fix">
     <li class="btn btn-primary" [routerLink]="'home'">home</li>
     <li  class="btn btn-secondary"[routerLink]="'forms'">form</li>
     <li  class="btn btn-danger"[routerLink]="'student'">student </li>
     <li class="btn btn-primary"[routerLink]="'customer'">customer</li>
-    <!-- <li class="btn btn-primary"[routerLink]="'supplier-list'">Supplier List</li> -->
     <li class="btn btn-primary"[routerLink]="'supplier'">Supplier List</li>
     <li class="btn btn-primary"[routerLink]="'supplier/supplier-list'">Supplier List with child name</li>
     <li class="btn btn-primary"[routerLink]="'supplier/SupplierGoods'">Supplier Goods</li>
     <li class="btn btn-danger"[routerLink]="'producer/producer-list'">producer-list</li>
+</ul> -->
+
+<ul class="fix">
+    <li [class]="item.cssClass" *ngFor="let item of menuList" [routerLink]="item.route">{{item.displayName}}</li>
 </ul>
